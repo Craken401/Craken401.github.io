@@ -13,164 +13,219 @@
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Portfolio+Víctor+Nolasco+Sánchez">
     <link rel="canonical" href="https://Craken401.github.io/">
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
     <title>Portfolio de Víctor Nolasco Sánchez</title>
-    <style>
-        body { background: rgba(208, 208, 208, 0.9); }
-    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="https://github.com/Craken401" target="_blank" rel="noreferrer">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/victor-nolasco-sanchez/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-            </ul>
-        </nav>
-        <h1>Portfolio de Víctor Nolasco Sánchez</h1>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <div class="topbar__identity">
+                <h1 class="topbar__title">Portfolio de Víctor Nolasco Sánchez</h1>
+                <p class="topbar__subtitle">Desarrollador full-stack junior · Ingeniería Informática (ESIIAB — UCLM)</p>
+            </div>
+            <nav class="topbar__nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#presentacion" aria-current="page">Sobre mí</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#titulo-multimedia">Multimedia</a></li>
+                    <li><a href="#titulo-contacto">Contacto</a></li>
+                    <li><a href="https://github.com/Craken401" target="_blank" rel="noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/victor-nolasco-sanchez/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section aria-labelledby="presentacion">
+    <main class="layout-grid">
+        <section class="panel hero span-12" aria-labelledby="presentacion">
             <h2 id="presentacion">Presentación</h2>
-            <p>Estudiante de 4º de Ingeniería Informática en la ESIIAB (UCLM). Experiencia como desarrollador full-stack junior en Teknei y en proyectos académicos de software, bases de datos y Android. Interés en cloud, web y datos.</p>
-            <img src="imagenes/Foto.jpeg" alt="Retrato de Víctor Nolasco Sánchez" width="240" height="320">
-            <p><strong>Contacto:</strong> <a href="mailto:victornolsa@outlook.com">victornolsa@outlook.com</a> · Albacete, España</p>
+            <div class="hero__body">
+                <div class="hero__text">
+                    <p>Estudiante de 4º de Ingeniería Informática en la ESIIAB (UCLM). Experiencia como desarrollador full-stack junior en Teknei y en proyectos académicos de software, bases de datos y Android. Interés en cloud, web y datos.</p>
+                    <div class="hero__quotes">
+                        <blockquote class="hero__quote">
+                            Crear soluciones limpias y accesibles que aporten valor real es el eje de mi forma de trabajar.
+                        </blockquote>
+                        <blockquote class="hero__quote hero__quote--secondary" cite="https://www.brainyquote.com/quotes/winston_churchill_134963">
+                            <p>"Si estás atravesando un infierno, sigue adelante."</p>
+                            <footer>— Winston Churchill</footer>
+                        </blockquote>
+                    </div>
+                    <div class="hero__contact">
+                        <div class="hero__contact-primary">
+                            <span class="hero__contact-label">Contacto directo</span>
+                            <a class="hero__contact-mail" href="mailto:victornolsa@outlook.com">victornolsa@outlook.com</a>
+                        </div>
+                        <div class="hero__contact-secondary">
+                            <span class="hero__contact-location">📍 Albacete, España</span>
+                            <a class="hero__contact-cta" href="#titulo-contacto">Coordinemos un proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <figure class="hero__figure">
+                    <img src="imagenes/Foto.jpeg" alt="Retrato de Víctor Nolasco Sánchez" width="240" height="320">
+                </figure>
+            </div>
         </section>
-        <section aria-labelledby="experiencia">
+        <section class="panel span-12 experience" aria-labelledby="experiencia">
             <h2 id="experiencia">Experiencia</h2>
-            <article>
-                <header>
-                    <h3>Teknei — Desarrollador full-stack junior (Prácticas)</h3>
-                    <p>18/06/2025 – 04/09/2025 · Albacete (400h)</p>
-                </header>
-                <ul>
-                    <li>Proyecto interno de cuadro de mando y facturación.</li>
-                    <li>Desarrollo frontend en Angular 19: KPIs estratégicos, tesorería, balances.</li>
-                    <li>Backend con Python 3.12 + SQLAlchemy, desplegado en AWS (Lambda, API Gateway, Cognito, S3, RDS).</li>
-                    <li>Documentación con Swagger y gestión segura de despliegues con CDK y Docker.</li>
-                    <li>Verificación de datos con DBeaver.</li>
-                    <li>Competencias adquiridas: Angular, AWS CDK, SQLAlchemy, buenas prácticas de despliegue, verificación de datos.</li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <h3>Proyecto CollabSession — Desarrollo frontend de plataforma de sesiones colaborativas (Moodle)</h3>
-                    <p>06/2024–10/2024 · Castilla-La Mancha</p>
-                </header>
-                <ul>
-                    <li>Desarrollo del frontend de un plugin para gestión de sesiones colaborativas en Moodle.</li>
-                    <li>Integración con base de datos y eventos en tiempo real.</li>
-                    <li>Enlace: <a href="https://github.com/Craken401/Collab-Session" target="_blank" rel="noreferrer">https://github.com/Craken401/Collab-Session</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <h3>Proyecto ARISS — App móvil para la Estación Espacial Internacional (ISS)</h3>
-                    <p>09/2024–12/2024 · Castilla-La Mancha</p>
-                </header>
-                <ul>
-                    <li>App Android para decodificar señales SSTV desde la ISS.</li>
-                    <li>Integración de procesamiento de imagen basado en código abierto.</li>
-                    <li>Enlace: <a href="https://github.com/alex-devices/ARISS-App" target="_blank" rel="noreferrer">https://github.com/alex-devices/ARISS-App</a></li>
-                </ul>
-            </article>
+            <p class="section-lead">Colaboraciones y prácticas donde he potenciado mi perfil full-stack y orientación a datos.</p>
+            <div class="experience-list">
+                <article class="experience-card">
+                    <header class="experience-card__header">
+                        <div>
+                            <h3>Teknei — Desarrollador full-stack junior (Prácticas)</h3>
+                            <p class="experience-card__meta">Proyecto interno de cuadro de mando y facturación.</p>
+                        </div>
+                        <p class="experience-card__duration">18/06/2025 – 04/09/2025 · Albacete (400h)</p>
+                    </header>
+                    <ul>
+                        <li>Frontend en <strong>Angular 19</strong> para KPIs estratégicos, tesorería y balances.</li>
+                        <li>Backend con <strong>Python 3.12</strong> y <strong>SQLAlchemy</strong>, desplegado en <strong>AWS</strong> (Lambda, API Gateway, Cognito, S3, RDS).</li>
+                        <li>Documentación con Swagger, automatización con CDK + Docker y verificación de datos con DBeaver.</li>
+                        <li>Competencias reforzadas: prácticas DevOps, despliegues seguros y control de calidad de datos.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <header class="experience-card__header">
+                        <div>
+                            <h3>Proyecto CollabSession — Frontend de sesiones colaborativas (Moodle)</h3>
+                            <p class="experience-card__meta">Herramienta para dinamizar la colaboración docente.</p>
+                        </div>
+                        <p class="experience-card__duration">06/2024 – 10/2024 · Castilla-La Mancha</p>
+                    </header>
+                    <ul>
+                        <li>Desarrollo del frontend del plugin con integraciones en tiempo real y diseño responsive.</li>
+                        <li>Sincronización con base de datos y eventos para coordinación de equipos educativos.</li>
+                        <li>Repositorio: <a href="https://github.com/Craken401/Collab-Session" target="_blank" rel="noreferrer">github.com/Craken401/Collab-Session</a></li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <header class="experience-card__header">
+                        <div>
+                            <h3>Proyecto ARISS — App Android para la Estación Espacial Internacional (ISS)</h3>
+                            <p class="experience-card__meta">Aplicación para decodificar señales SSTV de la ISS.</p>
+                        </div>
+                        <p class="experience-card__duration">09/2024 – 12/2024 · Castilla-La Mancha</p>
+                    </header>
+                    <ul>
+                        <li>Implementación Android con procesamiento de imagen basado en código abierto.</li>
+                        <li>Transformación de transmisiones en galerías de imágenes accesibles desde la app.</li>
+                        <li>Repositorio: <a href="https://github.com/alex-devices/ARISS-App" target="_blank" rel="noreferrer">github.com/alex-devices/ARISS-App</a></li>
+                    </ul>
+                </article>
+            </div>
         </section>
-        <aside aria-labelledby="habilidades">
-            <header>
-                <h3 id="habilidades">Habilidades</h3>
-            </header>
-            <ul>
-                <li><strong>Lenguajes:</strong> Java, Python, JavaScript, SQL.</li>
-                <li><strong>Frameworks:</strong> Angular, Node.js.</li>
-                <li><strong>Cloud &amp; DevOps:</strong> AWS (Lambda, API Gateway, CDK, Cognito, S3, RDS), Docker.</li>
-                <li><strong>Herramientas:</strong> Git, Swagger, DBeaver, Visual Studio Code.</li>
-            </ul>
-            <h4>Idiomas</h4>
-            <ul>
-                <li>Español (Nativo)</li>
-                <li>Inglés (B2, Cambridge)</li>
-                <li>Alemán (Básico)</li>
-            </ul>
-            <h4>Logros académicos</h4>
-            <ul>
-                <li>Matrícula de Honor en Fundamentos de Programación II.</li>
-                <li>Matrícula de Honor en Metodología de la Programación.</li>
-                <li>Matrícula de Honor en Redes de Computadores I.</li>
-            </ul>
-        </aside>
-        <section aria-labelledby="proyectos">
-            <h2 id="proyectos">Proyectos</h2>
-            <article>
-                <header>
-                    <h4>CollabSession (Moodle plugin)</h4>
-                </header>
-                <p>Frontend para sesiones colaborativas en Moodle con integración de base de datos y eventos en tiempo real que facilitan la coordinación de equipos docentes.</p>
-                <footer>
-                    <small>Tecnologías: HTML, CSS, JavaScript (frontend); DB + eventos en tiempo real.</small>
-                </footer>
-            </article>
-            <article>
-                <header>
-                    <h4>ARISS App (Android + SSTV)</h4>
-                </header>
-                <p>Aplicación Android para decodificar señales SSTV recibidas desde la Estación Espacial Internacional y transformar las transmisiones en galerías de imágenes.</p>
-                <footer>
-                    <small>Tecnologías: Android, Kotlin/Java, procesamiento de imagen.</small>
-                </footer>
-            </article>
-            <article>
-                <header>
-                    <h4>Portfolio/Website personal</h4>
-                </header>
-                <p>Sitio web personal creado con HTML semántico para presentar experiencia, proyectos y vías de contacto.</p>
-                <footer>
-                    <small>Tecnologías: HTML semántico.</small>
-                </footer>
-            </article>
+        <section class="panel span-12" aria-labelledby="proyectos">
+            <h2 id="proyectos">Proyectos destacados</h2>
+            <p class="section-lead">Una selección de trabajos que combinan desarrollo web, cloud y experiencias educativas.</p>
+            <div class="cards-grid project-grid">
+                <article class="project-card">
+                    <header>
+                        <h3>CollabSession (Moodle)</h3>
+                        <p class="project-card__meta">Plugin colaborativo para sesiones síncronas.</p>
+                    </header>
+                    <p>Interface web con paneles en tiempo real, integración con base de datos y gestión de equipos docentes.</p>
+                    <footer>
+                        <a class="project-card__link" href="https://github.com/Craken401/Collab-Session" target="_blank" rel="noreferrer">Repositorio</a>
+                    </footer>
+                </article>
+                <article class="project-card">
+                    <header>
+                        <h3>ARISS App</h3>
+                        <p class="project-card__meta">Aplicación Android + SSTV</p>
+                    </header>
+                    <p>Decodificación de señales SSTV de la ISS y generación de galerías de imágenes para difusión educativa.</p>
+                    <footer>
+                        <a class="project-card__link" href="https://github.com/alex-devices/ARISS-App" target="_blank" rel="noreferrer">Repositorio</a>
+                    </footer>
+                </article>
+                <article class="project-card">
+                    <header>
+                        <h3>Hexfront WW2</h3>
+                        <p class="project-card__meta">Estrategia por turnos · TypeScript + Phaser</p>
+                    </header>
+                    <p>Prototipo con tablero hexagonal editable y HUD táctico ambientado en Europa 1936.</p>
+                    <footer>
+                        <span class="project-card__status">En desarrollo</span>
+                        <span class="project-card__tech">TypeScript · Phaser 3 · Vite</span>
+                    </footer>
+                </article>
+                <article class="project-card">
+                    <header>
+                        <h3>JuegoLaberinto-Python</h3>
+                        <p class="project-card__meta">Algoritmos de búsqueda · Pygame</p>
+                    </header>
+                    <p>Juego minimalista de pathfinding con niveles generados proceduralmente para practicar estructuras de datos.</p>
+                    <footer>
+                        <a class="project-card__link" href="https://github.com/Craken401/JuegoLaberinto-Python-" target="_blank" rel="noreferrer">Ver en GitHub</a>
+                    </footer>
+                </article>
+            </div>
         </section>
-        <section id="educacion" aria-labelledby="titulo-educacion">
+        <section class="panel span-12 skills" aria-labelledby="habilidades">
+            <h2 id="habilidades">Habilidades</h2>
+            <p class="section-lead">Stack técnico, herramientas de apoyo y logros académicos recientes.</p>
+            <div class="skills-highlight">
+                <span>Full-stack web</span>
+                <span>Cloud-first</span>
+                <span>Aprendizaje continuo</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-block">
+                    <h3>Competencias técnicas</h3>
+                    <ul class="pill-list">
+                        <li><span class="pill-label">Lenguajes</span><span class="pill-value">Java · Python · JavaScript · SQL</span></li>
+                        <li><span class="pill-label">Frameworks</span><span class="pill-value">Angular · Node.js</span></li>
+                        <li><span class="pill-label">Cloud &amp; DevOps</span><span class="pill-value">AWS (Lambda, API Gateway, CDK, Cognito, S3, RDS) · Docker</span></li>
+                        <li><span class="pill-label">Herramientas</span><span class="pill-value">Git · Swagger · DBeaver · VS Code</span></li>
+                    </ul>
+                </div>
+                <div class="skills-block">
+                    <h3>Idiomas</h3>
+                    <ul class="chip-list">
+                        <li>Español · Nativo</li>
+                        <li>Inglés · B2 (Cambridge)</li>
+                        <li>Alemán · Básico</li>
+                    </ul>
+                    <h3>Logros académicos</h3>
+                    <ul class="timeline-list timeline-list--compact">
+                        <li>
+                            <span class="timeline-year">2022-23</span>
+                            <span class="timeline-title">Fundamentos de Programación II</span>
+                            <span class="timeline-note">Matrícula de Honor</span>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2023</span>
+                            <span class="timeline-title">Metodología de la Programación</span>
+                            <span class="timeline-note">Matrícula de Honor</span>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2024</span>
+                            <span class="timeline-title">Redes de Computadores I</span>
+                            <span class="timeline-note">Matrícula de Honor</span>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2025</span>
+                            <span class="timeline-title">Proyecto Teknei (Prácticas)</span>
+                            <span class="timeline-note">MVP presentado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="panel span-6" id="educacion" aria-labelledby="titulo-educacion">
             <h2 id="titulo-educacion">Educación</h2>
+            <p class="section-lead">Formación universitaria centrada en software, datos y sistemas cloud.</p>
             <article>
                 <header>
-                    <h3>Grado en Ingeniería Informática — ESIIAB, UCLM (2022 – Presente)</h3>
+                    <h3>Grado en Ingeniería Informática — ESIIAB, UCLM</h3>
                 </header>
-                <p>Castilla-La Mancha</p>
+                <p>2022 – Presente · Castilla-La Mancha</p>
             </article>
         </section>
-        <section aria-labelledby="titulo-contacto">
-            <h2 id="titulo-contacto">Formulario de contacto</h2>
-            <form method="post" action="#">
-                <fieldset>
-                    <legend>Información personal</legend>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" placeholder="Víctor" required>
-                    <label for="em">Correo electrónico</label>
-                    <input type="email" id="em" name="em" placeholder="victornolsa@outlook.com" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Otros</legend>
-                    <label for="why">¿Sobre qué quieres contactar?</label>
-                    <select id="why" name="why">
-                        <option value="trabajo">Trabajo</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="otros">Otros</option>
-                    </select>
-                    <label for="lang-input">Tecnología preferida</label>
-                    <input list="lang" id="lang-input" name="lang" placeholder="Selecciona una opción">
-                    <datalist id="lang">
-                        <option value="JavaScript"></option>
-                        <option value="Python"></option>
-                        <option value="C++"></option>
-                    </datalist>
-                    <label for="terms">Acepta los términos</label>
-                    <input type="checkbox" id="terms" name="terms" required>
-                </fieldset>
-                <button type="submit">Enviar contacto</button>
-                <button type="reset">Borrar formulario</button>
-            </form>
-        </section>
-        <section aria-labelledby="titulo-faq">
+        <section class="panel span-6" aria-labelledby="titulo-faq">
             <h2 id="titulo-faq">Preguntas frecuentes</h2>
             <details>
                 <summary>¿Cuál es tu disponibilidad?</summary>
@@ -182,39 +237,124 @@
             </details>
             <details>
                 <summary>¿Qué proyectos me entusiasman más?</summary>
-                <p>Me motivan los proyectos donde la tecnología se puede usar para un bien general desde la educación hasta el entorno empresarial, aunque de forma privada sigo trabajando en proyectos personales que me han motivado desde tiempo atrás como algún que otro videojuego.</p>
+                <p>Me motivan los proyectos donde la tecnología se puede usar para un bien general desde la educación hasta el entorno empresarial, además de proyectos personales que exploran videojuegos y experiencias inmersivas.</p>
             </details>
         </section>
-        <section aria-labelledby="titulo-multimedia">
+        <section class="panel span-12" aria-labelledby="titulo-multimedia">
             <h2 id="titulo-multimedia">Multimedia</h2>
-            <video controls muted poster="https://via.placeholder.com/960x540.png?text=Vídeo+del+portafolio" width="640" height="360">
-                <source src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
-            <h3>Sonidos destacados</h3>
-            <figure>
-                <figcaption>Cabasho — energía para sesiones de prototipado rápido.</figcaption>
-                <audio controls src="Sonidos/Cabasho.wav"></audio>
-            </figure>
-            <figure>
-                <figcaption>Dexter Song 2 — acompañamiento para el desarrollo nocturno.</figcaption>
-                <audio controls src="Sonidos/dexter-song-2.mp3"></audio>
-            </figure>
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo de presentación" style="width: 100%; aspect-ratio: 16/9; border: 0;" allowfullscreen></iframe>
+            <div class="media-grid">
+                <article class="media-card media-card--wide">
+                    <header>
+                        <h3>Vídeo resumen</h3>
+                        <p>Clip general con la estética y navegación del portfolio.</p>
+                    </header>
+                    <video controls muted loop poster="https://via.placeholder.com/960x540.png?text=Resumen+de+proyectos">
+                        <source src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </article>
+                <article class="media-card media-card--stack">
+                    <header>
+                        <h3>Sonidos para concentrarse</h3>
+                        <p>Lista breve para alternar entre prototipos y sesiones de documentación.</p>
+                    </header>
+                    <ul class="media-audio-list">
+                        <li>
+                            <span>Cabasho — energía para sesiones de prototipado rápido.</span>
+                            <audio controls src="Sonidos/Cabasho.wav"></audio>
+                        </li>
+                        <li>
+                            <span>Dexter Song 2 — acompañamiento para el desarrollo nocturno.</span>
+                            <audio controls src="Sonidos/dexter-song-2.mp3"></audio>
+                        </li>
+                    </ul>
+                </article>
+                <article class="media-card media-card--video">
+                    <header>
+                        <h3>Placeholder de gameplay</h3>
+                        <p>Vídeo libre “Ocean with sound” mientras preparo la demo jugable.</p>
+                    </header>
+                    <video controls muted loop poster="https://via.placeholder.com/640x360.png?text=Gameplay+en+preparaci%C3%B3n">
+                        <source src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </article>
+            </div>
         </section>
-        <section aria-labelledby="titulo-dialogo">
+        <section class="panel span-12" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Formulario de contacto</h2>
+            <p class="section-lead">¿Trabajamos juntos? Déjame tus datos y prepararé una respuesta personalizada.</p>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    <label for="em">Correo electrónico</label>
+                    <input type="email" id="em" name="em" placeholder="nombre@empresa.com" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <label for="why">¿Sobre qué quieres contactar?</label>
+                    <select id="why" name="why" required>
+                        <option value="" disabled selected>Selecciona un motivo</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                    <label for="lang-input">Tecnología preferida</label>
+                    <input list="lang" id="lang-input" name="lang" placeholder="Selecciona una opción">
+                    <datalist id="lang">
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                    <label for="message">Cuéntame los detalles</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Comparte contexto, expectativas o fechas clave"></textarea>
+                    <label class="input-checkbox" for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>Acepto los términos y condiciones</span>
+                    </label>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit">Enviar contacto</button>
+                    <button type="reset" class="ghost">Borrar formulario</button>
+                </div>
+            </form>
+        </section>
+        <section class="panel span-12" aria-labelledby="titulo-dialogo">
             <h2 id="titulo-dialogo">Más información</h2>
-            <button id="show" type="button">Ver más información</button>
+            <p class="section-lead">Contexto adicional sobre mi manera de trabajar y cómo conecto con los equipos.</p>
+            <div class="more-info">
+                <div class="more-info__copy">
+                    <p>Combino metodologías ágiles con una mentalidad de diseño centrada en las personas. Uso tableros visuales, revisiones de accesibilidad y métricas de entrega para asegurar que cada entrega aporte valor.</p>
+                    <p>Me encanta aprender de disciplinas ajenas al desarrollo: desde la música que inspira ritmos de trabajo hasta la historia que da vida a simulaciones como el prototipo Hexfront WW2.</p>
+                </div>
+                <div class="more-info__actions">
+                    <button id="show" type="button" class="more-info__cta">Ver manifiesto profesional</button>
+                    <span class="more-info__hint">Incluye principios de colaboración, herramientas favoritas y checklist de inicio.</span>
+                </div>
+            </div>
             <dialog id="modal">
                 <header>
-                    <h3>Detalles adicionales</h3>
+                    <h3>Manifiesto profesional</h3>
                 </header>
-                <p>Me interesan los proyectos donde la tecnología tiene impacto real: desde la educación (CollabSession), hasta el espacio (ARISS App), pasando por soluciones cloud empresariales (Teknei).</p>
-                <button id="cerrar" type="button">Cerrar</button>
+                <div class="dialog__content">
+                    <p>Soy estudiante de 4º curso y combino proyectos académicos con colaboraciones junior. Mi objetivo es aportar valor tangible sin descuidar la curva de aprendizaje.</p>
+                    <ul>
+                        <li>Sprints de 1-2 semanas con objetivos claros y revisión al cierre.</li>
+                        <li>Repositorios versionados con README de arranque rápido y checklist de pruebas.</li>
+                        <li>Comunicación transparente por Teams/Discord y actas ligeras tras cada reunión.</li>
+                        <li>Aprendizaje continuo: documento lo que no sé y pido mentoría cuando hace falta.</li>
+                    </ul>
+                    <p>Busco entornos donde pueda seguir creciendo como desarrollador full-stack aportando energía y responsabilidad.</p>
+                </div>
+                <div class="dialog__actions">
+                    <button id="cerrar" type="button">Cerrar</button>
+                </div>
             </dialog>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>Contacto: <a href="mailto:victornolsa@outlook.com">victornolsa@outlook.com</a> — GitHub: <a href="https://github.com/Craken401" target="_blank" rel="noreferrer">Craken401</a> — LinkedIn: <a href="https://www.linkedin.com/in/victor-nolasco-sanchez/" target="_blank" rel="noreferrer">/in/victor-nolasco-sanchez/</a> — Albacete, España</p>
     </footer>
     <script>
